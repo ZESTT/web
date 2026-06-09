@@ -197,16 +197,19 @@ export default function Home() {
 
       {/* HERO */}
   <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="rrelative w-full h-screen flex items-center justify-center overflow-hidden"
       >
-        {/* عنصر الخلفية المنفصل لحل مشكلة iOS */}
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${phaseBgImages.hero})`,
-            backgroundAttachment: 'fixed' 
-          }}
-        />
+      <div 
+    className="absolute inset-0 z-0"
+    style={{ 
+      backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${phaseBgImages.hero})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      height: '100vh', // فرض الطول الكامل
+      width: '100%'
+    }}
+  />
         <FloatingTools />
         <ParticleBackground />
         <motion.div
