@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تأثير التمرير السلس */
+html {
+  scroll-behavior: smooth;
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border-radius: 10px;
+}
+
+/* تحسين خلفية الأقسام مع الصور */
+section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    background-attachment: scroll;
+  }
+}
+/* منع ظهور شريط التمرير الأفقي */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* تخصيص شريط التمرير للقائمة الطويلة داخل الكرت */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 10px;
+}
+/* منع ظهور شريط التمرير الأفقي */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* شريط تمرير مخصص للقوائم الطويلة */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 10px;
+}
+
+/* تحسين السحب على التاتش باد */
+* {
+  scroll-behavior: smooth;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(255,255,255,0.5);
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #a855f7;
+  width: 20px;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 10px;
+}
