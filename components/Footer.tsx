@@ -58,8 +58,8 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-4 text-white">Contact Us</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li className="flex items-center gap-2">📍 Cairo, Maadi</li>
-              <li className="flex items-center gap-2">📞 010 1234 5678</li>
+              <li className="flex items-center gap-2">📍 Cairo, 14 Ahmed Hosny st Nasr City </li>
+              <li className="flex items-center gap-2">📞 01032841556</li>
               <li className="flex items-center gap-2">✉️ info@itgate.com</li>
             </ul>
           </motion.div>
@@ -70,7 +70,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h4 className="text-lg font-semibold mb-4 text-white">Newsletter</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Contact Us</h4>
             <div className="flex flex-col gap-3">
               <input
                 type="email"
@@ -78,7 +78,7 @@ const Footer = () => {
                 className="bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-purple-500"
               />
               <button className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-lg text-sm font-semibold hover:shadow-lg transition">
-                Subscribe
+                Contact
               </button>
             </div>
           </motion.div>
@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-white/10 pt-8 text-center text-gray-500 text-xs sm:text-sm">
           <p>© {currentYear} IT Gate Academy. All rights reserved.</p>
-          <p className="mt-1">Built with cutting-edge web technologies | Web Development Diploma</p>
+          <p className="mt-1">Built with IT Gate Team</p>
         </div>
       </div>
     </footer>
