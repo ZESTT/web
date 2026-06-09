@@ -197,7 +197,7 @@ export default function Home() {
 
       {/* HERO */}
       <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed md:bg-fixed" 
         style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${phaseBgImages.hero})` }}
       >
         <FloatingTools />
@@ -385,7 +385,7 @@ export default function Home() {
                 className="bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:shadow-xl"
               >
                 <div className="aspect-video relative">
-                  <video className="w-full h-full object-cover" controls preload="metadata">
+                  <video className="w-full h-full object-cover" controls  playsInline muted preload="metadata">
                     <source src={video.src} type="video/mp4" />
                   </video>
                 </div>
