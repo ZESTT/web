@@ -1,5 +1,5 @@
 // components/PhaseSection.tsx
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Phase } from '../data/curriculum';
 
@@ -18,8 +18,8 @@ const borderColors = [
   'from-purple-500 to-indigo-500',
 ];
 
-// تأثير دخول مختلف لكل مرحلة (تغيير الاتجاه والدوران والانزلاق)
-const getVariants = (phaseNum: number) => {
+// قمنا بتحديد النوع Variants هنا لضمان مطابقة التوقيع
+const getVariants = (phaseNum: number): Variants => {
   switch (phaseNum) {
     case 1:
       return {
@@ -66,13 +66,13 @@ const PhaseSection = ({ phase, bgImage, id, phaseNumber }: Props) => {
           variants={variants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className={`bg-white/10 backdrop-blur-lg rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-transparent bg-gradient-to-br ${borderColors[phaseNumber-1]} bg-origin-border shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl`}
+          className={`bg-white/10 backdrop-blur-lg rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-transparent bg-gradient-to-br ${borderColors[phaseNumber - 1]} bg-origin-border shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl`}
           style={{ backgroundClip: 'padding-box' }}
         >
           <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
-            <motion.h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
               {phase.title}
-            </motion.h2>
+            </h2>
             <span className="bg-black/40 px-4 py-2 rounded-full text-purple-200 font-mono border border-purple-400/50 backdrop-blur-sm">
               {phase.defaultHours} ساعة
             </span>
