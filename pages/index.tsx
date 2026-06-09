@@ -196,10 +196,17 @@ export default function Home() {
       />
 
       {/* HERO */}
-      <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed md:bg-fixed" 
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${phaseBgImages.hero})` }}
+  <section
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
+        {/* عنصر الخلفية المنفصل لحل مشكلة iOS */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${phaseBgImages.hero})`,
+            backgroundAttachment: 'fixed' 
+          }}
+        />
         <FloatingTools />
         <ParticleBackground />
         <motion.div
@@ -372,7 +379,7 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> Lets See Our Vibe</h2>
+            <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> Lets See Together</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4 rounded-full" />
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
