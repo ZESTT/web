@@ -359,12 +359,9 @@ export default function Home() {
                   <span className="bg-white/10 px-3 py-1 rounded-full text-sm text-gray-300">300+ real projects</span>
                 </div>
                 <p className="text-gray-300 leading-relaxed max-w-xl mx-auto md:mx-0">
-                  Ahmed Halabi is a passionate software engineer with over 7 years of industry experience,
-                  having built and delivered multiple large-scale web applications. He has been teaching
-                  web development for the past 5 years at various universities and colleges, training
-                  hundreds of students to become professional developers. His deep expertise in both
-                  frontend and backend technologies, combined with his engaging teaching style, ensures
-                  that every student gains practical, job-ready skills.
+                 "Ahmed Halabi is a distinguished Software Engineer and Tech Entrepreneur with 7 years of professional expertise in architecting large-scale web ecosystems and enterprise solutions. As the Founder of Nexus Academy, Ahmed has dedicated his career to driving innovation in web technologies and software development.
+
+With a strong academic footprint spanning 5 years, he has successfully bridged the gap between complex software engineering concepts and effective knowledge transfer, collaborating with top-tier universities to mentor the next generation of professional developers. His unique blend of hands-on technical acumen and pedagogical leadership ensures that he not only delivers robust, high-performance web applications but also cultivates high-caliber talent ready to excel in the global tech landscape."
                 </p>
               </div>
             </div>
